@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sabia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .title-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: orange;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      h1:hover {
+        color: #ff8000;
+      }
+
+      .section {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      h3 {
+        color: orange;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+      }
+
+      h3:hover {
+        color: #ff8000;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          max-width: 90%;
+        }
+      }
+
+      .column {
+        width: 50%;
+        float: left;
+      }
+
+      .checkbox-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .checkbox-item input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .checkbox-item label {
+        color: #333;
+      }
+
+      .completed label {
+        text-decoration: line-through;
+      }
+
+      .checkbox-item input[type="checkbox"]:checked + label:before {
+        background-color: orange;
+      }
+
+      .video-container {
+        width: 480px;
+        height: 270px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .column {
+        padding: 10px;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <div style="text-align: center">
+          <img
+            src="img/logo_Sabia.png"
+            alt=""
+            style="max-width: 30%; height: auto"
+          />
+        </div>
+        <h1>Assistente de pesquisa e Estudo</h1>
+      </div>
+
+      <h3>INTEGRANTES</h3>
+      <div class="grid-container">
+        <div class="column">
+          <p>Alan Dantas</p>
+          <p>Bruna de Brito</p>
+        </div>
+        <div class="column">
+          <p>Fabrycio Nakano</p>
+          <p>Joyce Beatriz</p>
+        </div>
+        <div class="column">
+          <p>Marcelo Ferreira</p>
+          <p>Matheus Brandão</p>
+          <p>Maykon Adriell Dutra</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>A IDEIA</h3>
+        <p>
+          Propomos auxiliar o autodidatismo digital. A internet é um mar vasto
+          de informações e desinformações, e é essencial promover um letramento
+          digital para que todos possam acessar informações adequadamente e, no
+          final, efetivar a democratização da informação.
+        </p>
+        <p>
+          Somado a isso, surgem ferramentas de IA como o ChatGPT, que abrem um
+          novo horizonte de funcionalidades para a desenvoltura autodidata, mas
+          também criam um novo universo de desinformação e desincentivo ao
+          desenvolvimento de senso crítico ao fornecer sempre, convenientemente,
+          uma resposta para tudo, mas nem sempre correta.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>O QUE FIZEMOS</h3>
+        <p>
+          Para solucionarmos o problema apresentado, foi preciso investigar os
+          conceitos fundamentais para que possamos estruturar nossa ferramenta.
+          Relatamos nossa pesquisa em forma de relatório e descreveremos como
+          utilizar tais princípios em nossa ferramenta.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>PARA QUE SERVE</h3>
+        <p>Precisávamos dos conceitos básicos que auxiliam o usuário em:</p>
+
+        <div class="image-container">
+          <img
+            src="img/arte01.png"
+            alt="Descrição da imagem"
+            style="max-width: 60%"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>COMO</h3>
+        <p>
+          Buscamos tópicos importantes a serem respondidos, para estabelecer
+          conceitos básicos sobre como construir nossa ferramenta:
+        </p>
+        <div class="image-container">
+          <img
+            src="img/arte02.png"
+            alt="Descrição da imagem"
+            style="max-width: 70%"
+          />
+        </div>
+        <div class="image-container">
+          <img
+            src="img/arte03.png"
+            alt="Descrição da imagem"
+            style="max-width: 55%"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>RESULTADOS</h3>
+        <p>
+          Todo esse conhecimento foi colocado em um
+          <a
+            href="https://docs.google.com/document/u/1/d/1kTT85VfrJagBUJDKtiD5AnwcCfNk4AKIM99XdHkRiKc/edit"
+            target="_blank"
+            >relatório</a
+          >
+          detalhado, somado a materiais úteis relacionados. No final, tivemos o
+          conhecimento necessário para propor o que é necessário ou não em nossa
+          ferramenta. E, finalmente, construímos uma prototipagem no
+          <a
+            href="https://www.figma.com/proto/dZFeR8L1GZvRX7NuuZvMhe/saBIA---proto?node-id=1-47&scaling=scale-down&page-id=0:1&starting-point-node-id=74:6&show-proto-sidebar=1"
+            target="_blank"
+            >Figma</a
+          >.
+        </p>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-d-kca1wKJI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
