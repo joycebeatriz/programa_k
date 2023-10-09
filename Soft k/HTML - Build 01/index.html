@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soft k 4.0</title>
+    <style>
+        /* Fontes personalizadas */
+        @font-face {
+            font-family: 'Cy Grotesk Key';
+            src: url('cygroteskkey.ttf') format('truetype');
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para o título */
+        .title {
+            font-size: 18px;
+            font-family: 'Cy Grotesk Wide', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* Estilos para os cabeçalhos principais */
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para as seções */
+        section {
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 30px auto;
+            max-width: 950px;
+            animation: fade-in 1s ease-out;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilos para os subcabeçalhos */
+        h2 {
+            font-size: 25px;
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para as imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para os links */
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para os parágrafos */
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* Estilos para o logotipo */
+        .logo {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para a tabela de imagens */
+        .image-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .image-table td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .image-table img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-table .caption {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        p a {
+            color: #8b83fd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            /* Adicione uma transição suave para o efeito */
+        }
+
+        p a:hover {
+            color: #1722b6;
+            /* Azul ao passar o mouse */
+        }
+
+        /* Estilizando as imagens circulares */
+        .info-block {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .info-block-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-block-item p {
+            margin-top: 10px;
+        }
+
+        /* Estilizando as imagens circulares */
+        .equipe {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Centralizar horizontalmente */
+            margin: 0 100px;
+            /* Aumentar a margem à esquerda */
+        }
+
+        .membro {
+            flex-basis: calc(50% - 10px);
+            /* Duas colunas com espaço igual entre elas */
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            /* Alinhar o nome ao lado da foto */
+            align-items: center;
+
+            /* Espaço uniforme entre as colunas */
+        }
+
+        .foto {
+            width: 60px;
+            /* Largura reduzida */
+            height: 60px;
+            /* Altura reduzida */
+            border-radius: 50%;
+            /* Tornando a imagem circular */
+            overflow: hidden;
+            margin-right: 10px;
+            /* Espaço entre a foto e o nome */
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nome {
+            font-weight: lighter;
+            /* Nome em negrito */
+            font-size: 14px;
+            /* Tamanho da fonte menor */
+            text-align: left;
+            /* Alinhar o nome à esquerda */
+        }
+
+        /* Estilos para o título da equipe */
+        .team-title {
+            font-family: 'Cy Grotesk Key', sans-serif;
+            font-size: 25px;
+            transition: color 0.3s ease;
+            /* Adicione uma transição suave para a cor */
+        }
+
+        .team-title:hover {
+            color: #707274;
+            /* Defina a cor desejada ao passar o mouse */
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var companionElement = document.getElementById("shadow-host-companion");
+            companionElement.parentNode.removeChild(companionElement);
+        });
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo_Softk40.png" alt="Logo">
+        </div>
+        <P
+            style="font-family: 'Montserrat', sans-serif; font-size: 25px; text-transform: uppercase; text-align: center;">
+            Avaliação de Soft Skills em Entrevistas de Emprego</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 20px; text-align: center;">
+            <strong>Build 1 - </strong> Implementação de Interface
+        </p>
+    </header>
+    <main>
+
+
+
+        <br>
+
+        <section>
+            <p class="team-title">EQUIPE</p>
+
+            <div style="text-align: center;">
+
+                <div class="equipe">
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/Hugo.png" alt="">
+                        </div>
+                        <div class="nome">Hugo Fernandes Silva</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/luan.png" alt="">
+                        </div>
+                        <div class="nome">Luan Gabriel Silva Oliveira</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/jordane.png" alt="">
+                        </div>
+                        <div class="nome">Jordane Gabriella Soares de Oliveira Pires</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/marcelo.png" alt="">
+                        </div>
+                        <div class="nome">Marcelo Henrique Lopes Ferreira</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/Joyce.jpg" alt="">
+                        </div>
+                        <div class="nome">Joyce Beatriz Ferreira da Costa Silva</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/fares.png" alt="">
+                        </div>
+                        <div class="nome">Matheus Fares Costa Brakes</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/lisandra.png" alt="">
+                        </div>
+                        <div class="nome">Lisandra Cristina de Moura Menezes</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/pain.png" alt="">
+                        </div>
+                        <div class="nome">Matheus Silva Pains</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p class="team-title">IDEAÇÃO PARA BUILD 1</p>
+            <h2></h2>
+            <p style="font-family: 'Cy Grotesk Key', sans-serif; font-size: 16px;">Estamos explorando tecnologias atuais
+                para a detecção de soft skills durante entrevistas de emprego, ainda assim, esse objetivo não é
+                alcançado apenas por explorar seu foco, e que portanto há benefícios em passar por conteúdos que são
+                essenciais para a construção de uma ferramenta.</p>
+            <p>Sendo coerente com o aprendizado anterior (
+                <a href="https://www.programak.info/copy-of-soft-k-4-0-instruction-1-1" target="_blank" style="text-decoration: none; color: #5478c7; font-weight: normal;">
+                    instruction 2
+                </a>
+                
+               
+            </a>
+            ), implementamos a primeira versão de uma
+                interface não funcional e não acessível no WordPress, a qual consiste nos elementos já organizados
+                dentro do CMS, mas sem conexão com o banco de dados, mas já prontos para serem trabalhados: embora o
+                WordPress seja “clica e arrasta”, ao definir elementos de páginas na plataforma, o código PHP já é
+                gerado, com o uso de plugins adequados, o código CSS também.
+            </p>
+
+            <div
+                style="border: 2px solid #ffffff; border-radius: 40px; padding: 25px; background-color: transparent; text-align: center; margin: 0 auto;">
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-bottom: 0; color: #2c6fdc; font-size: 20px;">
+                    <strong>DECISÃO DO GATE</strong> - 12/07/2023<br>
+                    <span style="color: #42a617; font-weight: bold; font-size: 24px;">GO!</span>
+                </p>
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-top: 10px; font-size: 16px;">
+                    Tutor: Fábio Lucena
+                </p>
+            </div>
+
+        </section>
+        <section>
+
+            <p class="team-title">IMPLEMENTAÇÃO PARA BUILD 2</p>
+            <h2></h2>
+            <p
+                style="font-family: 'Cy Grotesk Wide', sans-serif; font-size: 18px; color: #42a617; text-transform: uppercase;">
+                <strong>Nosso trabalho resultou em:</strong></p>
+
+            <ul style="text-align: justify;">
+                <li>Utilizamos um servidor simulado em máquina local utilizando o XAMPP.</li>
+                <li>Alinhamos a prototipagem digital de acordo com o objetivo, trazendo uma segunda versão, mais
+                    robusta.</li>
+                <li>Buscamos plugins gratuitos necessários para a transição da prototipagem digital do Figma para o
+                    WordPress em forma de elementos.</li>
+                <li>Remanejamos os elementos dentro do WordPress como a primeira versão da interface não funcional.</li>
+                <li>Definimos as descrições necessárias para cada página do site (já que até então estávamos usando
+                    Lorem Ipsum).</li>
+            </ul>
+            <br>
+
+            <p><b>Ferramentas utilizadas:</b> <i>Wordpress, Maria DB My SQL, Figma, Xamp</i></p>
+
+            <div class="info-block">
+                <div class="info-block-item" style="display: inline-block;">
+                    <img src="img/wordpress.png" alt="Imagem 2" style="width: 80px;">
+                </div>
+                <div class="info-block-item" style="display: inline-block;">
+                    <img src="img/sgbd.png" alt="Imagem 1" style="width: 120px;">
+                </div>
+                <div class="info-block-item" style="display: inline-block;">
+                    <img src="img/figma.png" alt="Imagem 1" style="width: 80px;">
+                </div>
+                <div class="info-block-item" style="display: inline-block;">
+                    <img src="img/xampp.png" alt="Imagem 1" style="width: 80px;">
+                </div>
+            </div>
+
+            <p><b>Plugin utilizado:</b> <i>Elementor</i></p>
+
+            <div class="info-block">
+                <div class="info-block-item" style="float: left; margin-right: 10px;">
+                    <img src="img/elementor.svg" alt="Imagem 1" style="width: 80px;">
+                </div>
+            </div>
+
+            <p><b>Confira aqui a Prototipagem das telas e interface para Wordpress:</b></p>
+            <table style="border-collapse: collapse;">
+                <tr style="border: none;">
+                    <td style="border: none; padding: 0;">
+                        <img src="img/2.png" alt="Imagem" style="width: 70px; height: 70px;">
+                    </td>
+                    <td style="border: none; padding: 0; padding-left: 10px;">
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li>
+                                Interface SOFT K (Prints das telas do WordPress) - <a
+                                    href="https://app-softk-xwjmpy52z6qjappbizqljds.streamlit.app/" target="_blank"
+                                    style="text-decoration: underline; color: blue; font-weight: normal;">Clique
+                                    aqui</a>
+                            </li>
+                            <br>
+                            <li>
+                                Prototipagem alta fidelidade Figma para o WordPress - <a
+                                    href="https://www.figma.com/file/ilhIJbfm0hBo6gdyLnt7Ac/SOFT-K-4.0-PROTOTYPE-1%C2%BA-BUILD?type=design&node-id=205%3A43&mode=design&t=ND59n9DIduU19jH0-1"
+                                    target="_blank"
+                                    style="text-decoration: underline; color: blue; font-weight: normal;">Clique
+                                    aqui</a>
+                            </li>
+                        </ul>
+                    </td>
+
+                </tr>
+            </table>
+
+
+            <div
+                style="border: 2px solid #ffffff; border-radius: 40px; padding: 25px; background-color: transparent; text-align: center; margin: 0 auto;">
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-bottom: 0; color: #2c6fdc; font-size: 20px;">
+                    <strong>DECISÃO DO GATE</strong> - 21/072023<br>
+                    <span style="color: #42a617; font-weight: bold; font-size: 24px;">GLORY!</span>
+                </p>
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-top: 10px; font-size: 16px;">
+                    Tutor: Fábio Lucena
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

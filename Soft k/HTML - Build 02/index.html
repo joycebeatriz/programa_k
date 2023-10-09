@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soft k 4.0</title>
+    <style>
+        /* Fontes personalizadas */
+        @font-face {
+            font-family: 'Cy Grotesk Key';
+            src: url('cygroteskkey.ttf') format('truetype');
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para o título */
+        .title {
+            font-size: 18px;
+            font-family: 'Cy Grotesk Wide', sans-serif;
+            text-transform: uppercase;
+        }
+
+        /* Estilos para os cabeçalhos principais */
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para as seções */
+        section {
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 30px auto;
+            max-width: 950px;
+            animation: fade-in 1s ease-out;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Estilos para os subcabeçalhos */
+        h2 {
+            font-size: 25px;
+            font-family: 'Cy Grotesk Key', sans-serif;
+        }
+
+        /* Estilos para as imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para os links */
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para os parágrafos */
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* Estilos para o logotipo */
+        .logo {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        /* Estilos para a tabela de imagens */
+        .image-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .image-table td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .image-table img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-table .caption {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        p a {
+            color: #8b83fd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            /* Adicione uma transição suave para o efeito */
+        }
+
+        p a:hover {
+            color: #1722b6;
+            /* Azul ao passar o mouse */
+        }
+
+        /* Estilizando as imagens circulares */
+        .info-block {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .info-block-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-block-item p {
+            margin-top: 10px;
+        }
+
+        /* Estilizando as imagens circulares */
+        .equipe {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Centralizar horizontalmente */
+            margin: 0 100px;
+            /* Aumentar a margem à esquerda */
+        }
+
+        .membro {
+            flex-basis: calc(50% - 10px);
+            /* Duas colunas com espaço igual entre elas */
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            /* Alinhar o nome ao lado da foto */
+            align-items: center;
+
+            /* Espaço uniforme entre as colunas */
+        }
+
+        .foto {
+            width: 60px;
+            /* Largura reduzida */
+            height: 60px;
+            /* Altura reduzida */
+            border-radius: 50%;
+            /* Tornando a imagem circular */
+            overflow: hidden;
+            margin-right: 10px;
+            /* Espaço entre a foto e o nome */
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nome {
+            font-weight: lighter;
+            /* Nome em negrito */
+            font-size: 14px;
+            /* Tamanho da fonte menor */
+            text-align: left;
+            /* Alinhar o nome à esquerda */
+        }
+
+        /* Estilos para o título da equipe */
+        .team-title {
+            font-family: 'Cy Grotesk Key', sans-serif;
+            font-size: 25px;
+            transition: color 0.3s ease;
+            /* Adicione uma transição suave para a cor */
+        }
+
+        .team-title:hover {
+            color: #707274;
+            /* Defina a cor desejada ao passar o mouse */
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var companionElement = document.getElementById("shadow-host-companion");
+            companionElement.parentNode.removeChild(companionElement);
+        });
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo_Softk40.png" alt="Logo">
+        </div>
+        <P
+            style="font-family: 'Montserrat', sans-serif; font-size: 25px; text-transform: uppercase; text-align: center;">
+            Avaliação de Soft Skills em Entrevistas de Emprego</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 20px; text-align: center;">
+            <strong>Build 2 - </strong> Sistemas Inteligentes e Streamlit 
+        </p>
+    </header>
+    <main>
+
+
+
+        <br>
+
+        <section>
+            <p class="team-title">EQUIPE</p>
+
+            <div style="text-align: center;">
+
+                <div class="equipe">
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/Hugo.png" alt="">
+                        </div>
+                        <div class="nome">Hugo Fernandes Silva</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/luan.png" alt="">
+                        </div>
+                        <div class="nome">Luan Gabriel Silva Oliveira</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/jordane.png" alt="">
+                        </div>
+                        <div class="nome">Jordane Gabriella Soares de Oliveira Pires</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/marcelo.png" alt="">
+                        </div>
+                        <div class="nome">Marcelo Henrique Lopes Ferreira</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/Joyce.jpg" alt="">
+                        </div>
+                        <div class="nome">Joyce Beatriz Ferreira da Costa Silva</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/fares.png" alt="">
+                        </div>
+                        <div class="nome">Matheus Fares Costa Brakes</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/lisandra.png" alt="">
+                        </div>
+                        <div class="nome">Lisandra Cristina de Moura Menezes</div>
+                    </div>
+                    <div class="membro">
+                        <div class="foto">
+                            <img src="img/pain.png" alt="">
+                        </div>
+                        <div class="nome">Matheus Silva Pains</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p class="team-title">IDEAÇÃO PARA BUILD 2</p>
+            <h2></h2>
+            <p style="font-family: 'Cy Grotesk Key', sans-serif; font-size: 16px;"><mark style="background-color: #e6f7ff; color: #070707;">O SOFT K 4.0 tem a finalidade de desenvolver um Produto Mínimo Viável (MVP) destinado a apoiar profissionais de Recursos Humanos no processo de seleção de novos colaboradores.</mark></p>
+            <p><b>Nossa meta é reduzir os encargos associados às más contratações</b>. Neste contexto, no presente card BUILD, pretendemos trabalhar com os três datasets abordados na instruction anterior, assim como evoluir da fase de exploração para conectarmos com o mundo.</p>
+            <p>Realizamos uma análise eliminatória dos datasets da “ SOFT K 4.0 - INSTRUCTION 3 - Datasets adequados para a solução” que consistia na exploração dos Datasets disponíveis, construindo um guia informativo sobre cada um deles, e estes foram os que atenderam aos nossos critérios:
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <img src="img/etapas.png" alt="" style="width: 65%;">
+            </div>
+           
+            <p><b>O objetivo foi:</b>
+            </p>
+            <ul>
+                <li>Realização de uma análise exploratória dos dados;</li>
+                <li>Execução do pré-processamento;</li>
+                <li>Implementação de um modelo de visão computacional para o conjunto de dados em vídeo e aplicação de um modelo de Processamento de Linguagem Natural (NLP) para os conjuntos de dados textuais.</li>
+                <li>Introdução prática ao Streamlit para integração subsequente dos modelos após treinamento;</li>
+                <li>Estudo de mercado e conexão com stakeholders para o desenvolvimento do SOFT K 4.0 como produto.</li>
+              </ul>
+            <div
+                style="border: 2px solid #ffffff; border-radius: 40px; padding: 25px; background-color: transparent; text-align: center; margin: 0 auto;">
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-bottom: 0; color: #2c6fdc; font-size: 20px;">
+                    <strong>DECISÃO DO GATE</strong> - 30/08/2023<br>
+                    <span style="color: #42a617; font-weight: bold; font-size: 24px;">GO!</span>
+                </p>
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-top: 10px; font-size: 16px;">
+                    Tutor: Fábio Lucena
+                </p>
+            </div>
+
+        </section>
+        <section>
+
+            <p class="team-title">IMPLEMENTAÇÃO PARA BUILD 2</p>
+            <h2></h2>
+            <p
+                style="font-family: 'Cy Grotesk Wide', sans-serif; font-size: 18px; color: #42a617; text-transform: uppercase;">
+                <strong>Nosso trabalho resultou em:</strong></p>
+
+                <table style="border-collapse: collapse;">
+                    <tr style="border: none;">
+                        <td style="border: none; padding: 0;">
+                            <img src="img/2.png" alt="Imagem" width="150" height="150">
+
+                        </td>
+                        <td style="border: none; padding: 0; padding-left: 10px;">
+                            <ul style="list-style-type: none; padding-left: 0;">
+                                <li style="margin-bottom: 5px;">01. Validação de stakeholder</li>
+                                <li style="margin-bottom: 5px;">02. Pipeline do produto com a prototipagem Streamlit de baixa fidelidade. - <a href="https://www.figma.com/file/tSPmmO6Ijfe2FRW8SJZ9e4/Prototipagem-Baixa-Fidelidade-Streamlit?type=design&node-id=0%3A1&mode=design&t=CafpSqhdDNvhBjtV-1" target="_blank" style="color: blue; font-weight: lighter;">link de acesso</a></li>
+                                <li style="margin-bottom: 5px;">03. Especificação dos requisitos de software considerando novos requisitos. - <a href="https://drive.google.com/file/d/1vlJp92WCTH02DiDzBcg_Gqbw6V9MGGSA/view?usp=sharing" target="_blank" style="color: blue; font-weight: lighter;"> link de acesso</a></li>
+                                <li style="margin-bottom: 5px;">04. Devido a limitações computacionais, não foi possível executar o modelo multimodal de machine learning para o dataset de vídeo e áudio, mas este é o <a href="https://github.com/GO0108/SOFT_audio_video" target="_blank" style="color: blue; font-weight: lighter;">repositório</a></li>
+                                <li style="margin-bottom: 5px;">05. NLP aplicado nos datasets. - <a href="https://github.com/LisandraMoura/NLP_Soft_K_1.1/tree/main" target="_blank" style="color: blue; font-weight: lighter;">link de acesso</a>
+                                  <ul style="list-style-type: circle; margin-top: 5px;">
+                                    <li>Stream of Consciousness Essays</li>
+                                    <li>MyPersonality Twitter</li>
+                                  </ul>
+                                </li>
+                                <li style="margin-bottom: 5px;">06. Implementar o questionário do Big Five no Streamlit. - <a href="https://app-softk-xwjmpy52z6qjappbizqljds.streamlit.app/" target="_blank" style="color: blue; font-weight: lighter;">link de acesso</a></li>
+                              </ul>
+                              
+                              
+                        </td>
+                    </tr>
+                </table>
+                
+
+
+            <div
+                style="border: 2px solid #ffffff; border-radius: 40px; padding: 25px; background-color: transparent; text-align: center; margin: 0 auto;">
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-bottom: 0; color: #2c6fdc; font-size: 20px;">
+                    <strong>DECISÃO DO GATE</strong> - 12/09/2023<br>
+                    <span style="color: #42a617; font-weight: bold; font-size: 24px;">GLORY!</span>
+                </p>
+                <p
+                    style="font-family: 'Grotesk Key', sans-serif; text-transform: uppercase; margin-top: 10px; font-size: 16px;">
+                    Tutor: Fábio Lucena
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
