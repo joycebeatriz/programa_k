@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sabia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .title-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: orange;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    h1:hover {
+      color: #ff8000;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    h3 {
+      color: orange;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    h4 {
+      color: rgb(233, 176, 71);
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    h3:hover {
+      color: #ff8000;
+    }
+
+    h4:hover {
+      color: #ff8000;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        max-width: 90%;
+      }
+    }
+
+    .column {
+      width: 50%;
+      float: left;
+    }
+
+    .checkbox-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .checkbox-item label {
+      color: #333;
+    }
+
+    .completed label {
+      text-decoration: line-through;
+    }
+
+    .checkbox-item input[type="checkbox"]:checked+label:before {
+      background-color: orange;
+    }
+
+    .video-container {
+      width: 480px;
+      height: 270px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .column {
+      padding: 10px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .collapsible {
+      background-color: orange;
+      color: #fff;
+      cursor: pointer;
+      padding: 8px 12px;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 14px;
+      transition: 0.4s;
+      border-radius: 4px;
+    }
+
+    .collapsible:hover {
+      background-color: #ff8c00;
+    }
+
+    .content {
+      padding: 0;
+      display: none;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .content iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    .my-column {
+      float: left;
+      width: 50%;
+    }
+
+    .image {
+      width: 100%;
+    }
+
+    .imagem-responsiva {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .centrar-imagem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      /* Largura desejada */
+      height: 400px;
+      /* Altura desejada */
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-container">
+      <div style="text-align: center">
+        <img src="img/logo_Sabia.png" alt="" style="max-width: 30%; height: auto" />
+      </div>
+      <h1>Assistente de Pesquisa e Estudo</h1>
+    </div>
+
+    <h3>INTEGRANTES</h3>
+    <div class="grid-container">
+      <div class="column">
+        <p>Alan Dantas</p>
+        <p>Bruna de Brito</p>
+        <p>Fabrycio Nakano</p>
+      </div>
+      <div class="column">
+        <p>Joyce Beatriz</p>
+        <p>Marcelo Ferreira</p>
+        <p>Matheus Brandão</p>
+      </div>
+      <div class="column">
+
+        <p>Maykon Adriell</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p>
+      <H3>CRIAÇÃO DE UM CHATBOT</H3>
+      <h4>O que foi proposto?</h4>
+      </p>
+      <p>
+        Foi proposto o desenvolvimento de um ChatBot com o objetivo de facilitar a pesquisa personalizada, esclarecer
+        dúvidas e aprimorar a integração com nossa ferramenta (uma extensão de navegador para pesquisa).
+      </p>
+    </div>
+
+    <div class="section">
+      <h4>Abordagem</h4>
+      <h4>1- Chatbot Retrieval</h4>
+      <p>
+        Esse tipo de chatbot recupera respostas predefinidas de um conjunto de dados existente com base nas entradas dos
+        usuários, em vez de gerar respostas totalmente novas por meio da geração de linguagem natural.
+      </p>
+      <br>
+      <b>1.1 - Modelo de Chatbot com NLTK</b>
+      <p>Uma abordagem mais simples em relação ao chatbot foi utilizando a biblioteca NLTK. Nessa abordagem, era
+        necessário o input preciso do usuário para que fosse retornado a resposta correspondente ao exato input. Além
+        disso, foi desenvolvido o começo do fornecimento de artigos de wikipedia.</p>
+      <img src="/img/figura01.png" alt="" class="imagem-responsiva">
+      <p> Disponível em: <a href="https://colab.research.google.com/drive/1posxuuDHhwhhsIS4wWnh3avNZiLvy1Jl?usp=sharing"
+          target="_blank">Link para o Google Colab</a></p>
+
+      <br>
+
+      <b>1.2 - Modelo Bag Of words</b>
+      <br>
+      <p>Ele utiliza representações de BoW para realizar inferências e determinar a melhor resposta, dentre as opções
+        previamente anotadas, a ser fornecida ao usuário. Nossa intenção ao treinar este modelo era melhorar a
+        compreensão pelo chatbot das frases fornecidas pelo usuário, mesmo que elas não correspondessem exatamente às
+        frases anotadas.</p>
+      <p>Realizamos treinamentos ao longo de 1000 épocas e conduzimos diversos experimentos com seus hiperparâmetros, no
+        entanto, <u>a abordagem ainda exigia entradas muito precisas pelo usuário</u> para que o chatbot pudesse
+        compreender adequadamente. Ficou determinado, como uma possível melhora dessa abordagem, o uso de representações
+        densas das palavras para aprimorar o contexto do input fornecido.</p>
+      <img src="/img/figura02.png" alt="" class="imagem-responsiva">
+      <p> Disponível em: <a href="https://github.com/GO0108/sabia/tree/main/Criando%20um%20ChatBot/Chatbot%20BoW
+        " target="_blank">Link para o Github</a></p>
+
+      <br>
+      <h4>2- Chatbot Generativo</h4>
+      <p>Um chatbot generativo é um tipo de chatbot que é capaz de gerar respostas de forma autônoma, criando texto novo
+        e contextualmente relevante em vez de apenas selecionar respostas predefinidas de um conjunto de dados. Esse
+        tipo de chatbot utiliza LMMs como o GPT3 para fornecer respostas mais dinâmicas.</p>
+
+      <br>
+      <b>2.1 - Modelo através da API do ChatGPT</b>
+      <p>Por fim, essa abordagem utiliza diretamente a API do ChatGPT para adquirirmos as respostas a partir dela, e
+        usamos o Gradio para obtermos uma interface.</p>
+      <img src="/img/figura03.png" alt="" class="imagem-responsiva">
+      <p> Report da Abordagem: <a
+          href="https://docs.google.com/document/d/1eLxZgTlY8tyxG7cJZ3hmIM4Iip25-zixnGyhYjK0LPo/edit#heading=h.y7lmrqwp95mt"
+          target="_blank">Chatbot com chatGPT</a></p>
+    </div>
+
+    <div class="section">
+
+      <div class="container">
+        <h3>RESULTADOS</h3>
+        <p>Pelos melhores resultados das abordagens anteriores, escolhemos utilizar a API do ChatGPT, pelo fácil uso e
+          bons resultados. Essa abordagem se mostrou positiva em um primeiro momento, mas em futuros desenvolvimentos,
+          devido a sua falta de escalabilidade, poderia ser revisada.</p>
+        <p>Ademais, criamos um Node.JS, pois isso facilitaria a integração em relação a integração com o plugin em
+          React:</p>
+        <div class="centrar-imagem">
+          <img src="/img/figura04.png" alt="" class="imagem-responsiva">
+        </div>
+      </div>
+      <br>
+
+      <h3>IMPLEMENTAÇÃO DE FEATURES</h3>
+
+      <h4>O que foi proposto?</h4>
+      <p>Foi proposto a integração das features anteriormente citadas dentro do nosso plugin: O chatbot e o sistema de
+        fornecimento de artigos de wikipédia e imagens.</p>
+
+      <h4>Aprimoramentos das prototipagens</h4>
+      <p>Em um primeiro momento, aprimoramos as prototipagens anteriormente feitas. Realizamos então uma melhoria no
+        fornecimento de imagens e artigos de wikipédia.</p>
+      <a href="https://colab.research.google.com/drive/17rSaR31g_Vu3V88KV5DXfVlGsGSGdOin?usp=sharing" target="_blank">
+        Link de acesso ao colab </a>
+
+      <h4>Desenvolvimento da integração</h4>
+      <p>Integramos o chatbot a nossa ferramenta:</p>
+      <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/3UcJK25PZCs?si=fU4kadAjSBImc3DQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+    </div>
+    <div class="container">
+      <h3>RESULTADO FINAL</h3>
+      <br>
+      <p>Aprimoramos aspectos visuais e colocamos as outras funcionalidades no plugin</p>
+      <p>Ademais, criamos um Node.JS, pois isso facilitaria a integração em relação a integração com o plugin em React:
+      </p>
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ErGoSYkJja8?si=FKOZAqRdyioDeDC2"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+      <br>
+      <p>Por fim, basta ressaltar que melhorias poderiam ser feitas, assim como o adicional de novas ferramentas. Para
+        essa e mais implementações testadas ao longo do projeto basta acessar o repositório do projeto:</p>
+      <br>
+      <a href="https://github.com/GO0108/sabia" target="_blank">Clique aqui para visitar o GitHub</a>
+    </div>
+</body>
+
+</html>
